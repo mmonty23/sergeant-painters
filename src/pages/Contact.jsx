@@ -71,10 +71,10 @@ const processSteps = [
 ];
 
 const serviceAreas = [
-  'Fort Myers', 'Cape Coral', 'Iona', 'Fort Myers Beach',
-  'Sanibel', 'Captiva', 'Arborwood', 'Corkscrew',
-  'Estero', 'Bonita Springs', 'Bonita Beach', 'Barefoot Beach',
-  'Miromar Lakes', 'Naples'
+  'Clearwater', 'Clearwater Beach', 'Belleair', 'Largo',
+  'Dunedin', 'Palm Harbor', 'Safety Harbor', 'Tarpon Springs',
+  'Indian Rocks Beach', 'Redington Beach', 'Madeira Beach', 'Treasure Island',
+  'St. Pete Beach', 'Seminole'
 ];
 
 export default function Contact() {
