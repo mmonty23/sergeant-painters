@@ -46,14 +46,12 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
           <div>
-            <div className="flex items-center gap-2 mb-6">
-              <div className="w-12 h-12 bg-gradient-to-br from-orange-400 to-orange-500 rounded-full flex items-center justify-center">
-                <span className="text-blue-800 font-black text-lg">JT</span>
-              </div>
-              <div>
-                <span className="text-orange-400 text-xs tracking-[0.15em] font-semibold">JUST-N-TIME</span>
-                <p className="text-white font-black text-lg tracking-wide -mt-1">PAINT & WASH</p>
-              </div>
+            <div className="mb-6">
+              <img 
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6997137b3b52a1df864f0b6d/5374f7522_AI-Image-Editor-2026-02-19_09-56-23.png"
+                alt="JUST-N-TIME Logo"
+                className="h-16 w-auto"
+              />
             </div>
             <p className="text-slate-400 leading-relaxed mb-6">
               Professional painting and pressure washing services delivering quality results every time. Your trusted local experts.
