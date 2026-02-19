@@ -117,7 +117,7 @@ export default function Navigation() {
 
           {/* CTA Buttons */}
           <div className="hidden lg:flex items-center gap-3">
-            <a href="#contact">
+            <a href="#quote-form">
               <Button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 rounded-full">
                 GET FREE QUOTE
               </Button>
@@ -162,7 +162,7 @@ export default function Navigation() {
                 </a>
               ))}
               <div className="pt-4 space-y-3">
-                <a href="#contact" onClick={() => setIsOpen(false)}>
+                <a href="#quote-form" onClick={() => setIsOpen(false)}>
                   <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-full">
                     GET FREE QUOTE
                   </Button>

@@ -64,6 +64,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
+            id="quote-form"
           >
             <div className="bg-blue-700 rounded-2xl p-8 shadow-2xl">
               {/* Form Logo */}
