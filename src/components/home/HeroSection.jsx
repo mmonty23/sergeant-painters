@@ -69,7 +69,7 @@ export default function HeroSection() {
             <div className="bg-blue-700 rounded-2xl p-8 shadow-2xl">
               {/* Form Logo */}
               <div className="flex justify-center mb-6">
-                <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center shadow-lg p-2">
+                <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center shadow-lg">
                   <img 
                     src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6997137b3b52a1df864f0b6d/95c894654_logo.png" 
                     alt="JUST-N-TIME Paint & Wash Logo"
