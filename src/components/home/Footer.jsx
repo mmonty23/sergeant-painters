@@ -47,8 +47,12 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-14 h-14 bg-gradient-to-br from-orange-400 to-orange-500 rounded-full flex items-center justify-center flex-shrink-0">
-                <span className="text-blue-900 font-black text-xl">JT</span>
+              <div className="w-14 h-14 rounded-full overflow-hidden flex-shrink-0">
+                <img 
+                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6997137b3b52a1df864f0b6d/dc002af42_image.png"
+                  alt="JUST-N-TIME Logo"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div>
                 <span className="text-orange-400 text-sm tracking-[0.2em] font-bold">JUST-N-TIME</span>
