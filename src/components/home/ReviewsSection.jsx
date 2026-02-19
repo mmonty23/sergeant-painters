@@ -75,8 +75,18 @@ export default function ReviewsSection() {
   }, []);
 
   return (
-    <section className="py-20 lg:py-28 bg-slate-900" id="reviews">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-20 lg:py-28 relative" id="reviews">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80"
+          alt="Florida Property"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-slate-900/85" />
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
