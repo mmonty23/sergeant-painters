@@ -127,8 +127,8 @@ export default function Contact() {
                   <Mail className="w-6 h-6 text-orange-500 mt-1" />
                   <div>
                     <p className="font-semibold text-slate-900">Email:</p>
-                    <a href="mailto:info@justntimepaint.com" className="text-blue-600 hover:underline">
-                      info@justntimepaint.com
+                    <a href="mailto:justntimewash@gmail.com" className="text-blue-600 hover:underline">
+                      justntimewash@gmail.com
                     </a>
                   </div>
                 </div>
