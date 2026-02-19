@@ -208,7 +208,7 @@ export default function Blog() {
           <p className="text-white/80 text-lg mb-8">
             Get your free quote today and see why customers choose JUST-N-TIME
           </p>
-          <Link to={createPageUrl('Contact') + '#quote-form'}>
+          <Link to={createPageUrl('Contact')}>
             <Button className="bg-orange-500 hover:bg-orange-400 text-blue-900 font-bold px-8 py-6 rounded-full text-lg">
               GET FREE QUOTE
             </Button>
