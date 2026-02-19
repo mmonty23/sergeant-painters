@@ -62,11 +62,11 @@ export default function Navigation() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <div className="flex items-center gap-2">
-              <div className="w-16 h-16 flex items-center justify-center">
+              <div className="w-16 h-16 rounded-full overflow-hidden flex items-center justify-center bg-white">
                 <img 
                   src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6997137b3b52a1df864f0b6d/5374f7522_AI-Image-Editor-2026-02-19_09-56-23.png" 
                   alt="JUST-N-TIME Logo"
-                  className="w-full h-full object-contain"
+                  className="w-full h-full object-cover scale-110"
                 />
               </div>
               <div className="hidden sm:block">
