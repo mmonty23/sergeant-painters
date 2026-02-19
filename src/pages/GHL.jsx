@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 export default function GHL() {
+  const [view, setView] = useState('preview'); // 'preview' or 'code'
+  
   const htmlCode = `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1057,36 +1059,77 @@ export default function GHL() {
 </html>`;
 
   return (
-    <div className="min-h-screen bg-slate-900 p-4 sm:p-8">
-      <div className="max-w-6xl mx-auto">
-        <div className="bg-slate-800 rounded-lg p-6 mb-6">
-          <h1 className="text-3xl font-bold text-white mb-4">GHL HTML/JavaScript Code</h1>
-          <p className="text-slate-300 mb-4">
-            Copy the code below and paste it into your GoHighLevel custom code block. This is a complete, self-contained HTML page with all styles and functionality included.
-          </p>
-          <button
-            onClick={() => {
-              navigator.clipboard.writeText(htmlCode);
-              alert('Code copied to clipboard!');
-            }}
-            className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
-          >
-            📋 Copy All Code
-          </button>
-        </div>
-        
-        <div className="bg-slate-800 rounded-lg overflow-hidden">
-          <div className="bg-slate-700 px-4 py-2 flex items-center justify-between border-b border-slate-600">
-            <span className="text-slate-300 font-mono text-sm">index.html</span>
-            <span className="text-slate-400 text-xs">{htmlCode.length.toLocaleString()} characters</span>
+    <div className="min-h-screen bg-slate-900">
+      {/* Header with Controls */}
+      <div className="bg-slate-800 border-b border-slate-700 sticky top-0 z-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div>
+              <h1 className="text-2xl font-bold text-white mb-1">GHL HTML/JavaScript Code</h1>
+              <p className="text-slate-400 text-sm">Complete standalone HTML for GoHighLevel</p>
+            </div>
+            
+            <div className="flex gap-3 flex-wrap">
+              <button
+                onClick={() => setView('preview')}
+                className={`px-4 py-2 rounded-lg font-semibold transition-colors ${
+                  view === 'preview' 
+                    ? 'bg-blue-600 text-white' 
+                    : 'bg-slate-700 text-slate-300 hover:bg-slate-600'
+                }`}
+              >
+                👁️ Preview
+              </button>
+              <button
+                onClick={() => setView('code')}
+                className={`px-4 py-2 rounded-lg font-semibold transition-colors ${
+                  view === 'code' 
+                    ? 'bg-blue-600 text-white' 
+                    : 'bg-slate-700 text-slate-300 hover:bg-slate-600'
+                }`}
+              >
+                📝 Code
+              </button>
+              <button
+                onClick={() => {
+                  navigator.clipboard.writeText(htmlCode);
+                  alert('✅ Code copied to clipboard!');
+                }}
+                className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-lg font-semibold transition-colors"
+              >
+                📋 Copy Code
+              </button>
+            </div>
           </div>
-          <pre className="p-4 overflow-x-auto">
-            <code className="text-green-400 text-sm font-mono whitespace-pre">
-              {htmlCode}
-            </code>
-          </pre>
         </div>
       </div>
+
+      {/* Content */}
+      {view === 'preview' ? (
+        <div className="w-full h-screen">
+          <iframe
+            srcDoc={htmlCode}
+            className="w-full h-full border-0"
+            title="Website Preview"
+          />
+        </div>
+      ) : (
+        <div className="p-4 sm:p-8">
+          <div className="max-w-6xl mx-auto">
+            <div className="bg-slate-800 rounded-lg overflow-hidden">
+              <div className="bg-slate-700 px-4 py-3 flex items-center justify-between border-b border-slate-600">
+                <span className="text-slate-300 font-mono text-sm">index.html</span>
+                <span className="text-slate-400 text-xs">{htmlCode.length.toLocaleString()} characters</span>
+              </div>
+              <pre className="p-4 overflow-x-auto max-h-[calc(100vh-200px)]">
+                <code className="text-green-400 text-sm font-mono whitespace-pre">
+                  {htmlCode}
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
