@@ -49,17 +49,17 @@
  */
 import Blog from './pages/Blog';
 import Contact from './pages/Contact';
+import GHL from './pages/GHL';
 import GoogleReview from './pages/GoogleReview';
 import Home from './pages/Home';
-import GHL from './pages/GHL';
 
 
 export const PAGES = {
     "Blog": Blog,
     "Contact": Contact,
+    "GHL": GHL,
     "GoogleReview": GoogleReview,
     "Home": Home,
-    "GHL": GHL,
 }
 
 export const pagesConfig = {
