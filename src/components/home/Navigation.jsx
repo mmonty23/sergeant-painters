@@ -62,8 +62,13 @@ export default function Navigation() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <div className="flex items-center gap-2">
-              <div className="w-12 h-12 bg-gradient-to-br from-orange-400 to-orange-500 rounded-full flex items-center justify-center">
-                <span className="text-blue-800 font-black text-lg">JT</span>
+              <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center p-1.5 shadow-lg">
+                <img 
+                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6997137b3b52a1df864f0b6d/95c894654_logo.png" 
+                  alt="JUST-N-TIME Logo"
+                  className="w-full h-full object-contain"
+                  style={{ filter: 'hue-rotate(-10deg) saturate(1.2)' }}
+                />
               </div>
               <div className="hidden sm:block">
                 <span className="text-orange-400 text-xs tracking-[0.15em] font-semibold">JUST-N-TIME</span>
