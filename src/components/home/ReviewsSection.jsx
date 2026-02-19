@@ -187,11 +187,11 @@ export default function ReviewsSection() {
           viewport={{ once: true }}
           className="text-center mt-12"
         >
-          <a href="#contact">
+          <Link to={createPageUrl('Contact')}>
             <Button className="bg-orange-500 hover:bg-orange-400 text-blue-900 font-bold px-8 py-6 rounded-full text-lg">
               CONTACT US NOW
             </Button>
-          </a>
+          </Link>
         </motion.div>
       </div>
     </section>
