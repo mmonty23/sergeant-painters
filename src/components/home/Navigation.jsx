@@ -37,7 +37,7 @@ const navLinks = [
     ]
   },
   { name: 'Blog', href: '/Blog' },
-  { name: 'Contact', href: '#contact' },
+  { name: 'Contact', href: '/Contact' },
 ];
 
 export default function Navigation() {
