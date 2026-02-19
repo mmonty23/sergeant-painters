@@ -156,7 +156,7 @@ export default function Contact() {
             </div>
 
             {/* Right Column - Form */}
-            <div className="bg-white rounded-2xl shadow-xl p-8">
+            <div className="bg-white rounded-2xl shadow-xl p-8" id="quote-form">
               <h3 className="text-2xl font-bold text-slate-900 mb-6">GET A FREE QUOTE</h3>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
@@ -165,8 +165,23 @@ export default function Contact() {
                   </label>
                   <Input
                     required
+                    placeholder="John Doe"
                     value={formData.fullName}
                     onChange={(e) => setFormData({...formData, fullName: e.target.value})}
+                    className="w-full"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-slate-700 mb-2">
+                    Email *
+                  </label>
+                  <Input
+                    type="email"
+                    required
+                    placeholder="john@example.com"
+                    value={formData.email}
+                    onChange={(e) => setFormData({...formData, email: e.target.value})}
                     className="w-full"
                   />
                 </div>
@@ -178,6 +193,7 @@ export default function Contact() {
                   <Input
                     type="tel"
                     required
+                    placeholder="(123) 456-7890"
                     value={formData.phone}
                     onChange={(e) => setFormData({...formData, phone: e.target.value})}
                     className="w-full"
@@ -186,11 +202,12 @@ export default function Contact() {
 
                 <div>
                   <label className="block text-sm font-medium text-slate-700 mb-2">
-                    Short message about your needs *
+                    Message *
                   </label>
                   <Textarea
                     required
                     rows={5}
+                    placeholder="Tell us about your project..."
                     value={formData.message}
                     onChange={(e) => setFormData({...formData, message: e.target.value})}
                     className="w-full"
@@ -312,9 +329,11 @@ export default function Contact() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">READY TO TAKE THE NEXT STEP?</h2>
           <h3 className="text-2xl md:text-3xl font-bold text-orange-400 mb-8">GET A FREE QUOTE TODAY!</h3>
-          <Button className="bg-orange-500 hover:bg-orange-600 text-white font-bold px-10 py-6 text-lg rounded-full">
-            GET FREE QUOTE
-          </Button>
+          <a href="#quote-form">
+            <Button className="bg-orange-500 hover:bg-orange-600 text-white font-bold px-10 py-6 text-lg rounded-full">
+              GET FREE QUOTE
+            </Button>
+          </a>
         </div>
       </section>
     </div>
