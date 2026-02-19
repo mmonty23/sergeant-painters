@@ -318,7 +318,7 @@ export default function Contact() {
           {/* Map placeholder */}
           <div className="rounded-lg overflow-hidden shadow-lg">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d451822.8276432614!2d-82.04280537768033!3d26.44066828356324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88db4e9d24ca8771%3A0x8ea3e2fbc9f9b6dd!2sFort%20Myers%2C%20FL!5e0!3m2!1sen!2sus!4v1645564356789!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112576.40470933595!2d-82.87410537376405!3d27.965882632729653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2ed41b1c0223f%3A0x7e7f0cd44a34ad59!2sClearwater%2C%20FL!5e0!3m2!1sen!2sus!4v1645564356789!5m2!1sen!2sus"
               width="100%"
               height="400"
               style={{ border: 0 }}
