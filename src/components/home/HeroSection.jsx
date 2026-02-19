@@ -35,8 +35,8 @@ export default function HeroSection() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6997137b3b52a1df864f0b6d/5374f7522_AI-Image-Editor-2026-02-19_09-56-23.png"
-          alt="JUST-N-TIME Logo"
+          src="https://assets.cdn.filesafe.space/Eq2dpCqcs3qkFVgmbkxb/media/679dc8dc2b1c5bc78766de5e.jpeg"
+          alt="Painted House"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/60 to-slate-900/40" />
