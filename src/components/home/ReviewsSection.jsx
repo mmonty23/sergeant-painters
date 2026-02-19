@@ -79,11 +79,11 @@ export default function ReviewsSection() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80"
-          alt="Florida Property"
+          src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1920&q=80"
+          alt="Florida House with Palm Trees"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-slate-900/85" />
+        <div className="absolute inset-0 bg-gradient-to-b from-slate-900/60 via-slate-900/50 to-slate-900/60" />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
