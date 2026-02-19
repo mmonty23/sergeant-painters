@@ -124,7 +124,7 @@ export default function Navigation() {
             </a>
             <a 
               href="tel:+18139704390"
-              className="flex items-center gap-2 px-4 py-2 border-2 border-orange-400 text-orange-400 rounded-full hover:bg-orange-400 hover:text-slate-900 transition-all font-semibold"
+              className="flex items-center gap-2 px-4 py-2 bg-orange-500 text-white rounded-full hover:bg-orange-600 transition-all font-semibold whitespace-nowrap"
             >
               <Phone className="w-4 h-4" />
               (813) 970-4390
