@@ -42,8 +42,8 @@ export default function Footer() {
   return (
     <footer className="bg-slate-900" id="contact">
       {/* Main Footer */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12">
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-3 mb-6">
@@ -159,13 +159,13 @@ export default function Footer() {
 
       {/* Service Areas Bar */}
       <div className="border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <div className="flex flex-wrap items-center justify-center gap-4 text-sm">
-            <span className="text-white font-semibold">Service Areas:</span>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6">
+          <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 text-xs sm:text-sm">
+            <span className="text-white font-semibold w-full sm:w-auto text-center">Service Areas:</span>
             {serviceAreas.map((area, index) => (
               <span key={area} className="text-slate-400">
                 {area}
-                {index < serviceAreas.length - 1 && <span className="ml-4">•</span>}
+                {index < serviceAreas.length - 1 && <span className="ml-3 sm:ml-4">•</span>}
               </span>
             ))}
           </div>
@@ -174,10 +174,10 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div className="border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
-            <p>© 2024 JUST-N-TIME Paint & Pressure Wash. All rights reserved.</p>
-            <div className="flex gap-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-3 sm:gap-4 text-xs sm:text-sm text-slate-500">
+            <p className="text-center md:text-left">© 2024 JUST-N-TIME Paint & Pressure Wash. All rights reserved.</p>
+            <div className="flex gap-4 sm:gap-6">
               <a href="#" className="hover:text-orange-400 transition-colors">Privacy Policy</a>
               <a href="#" className="hover:text-orange-400 transition-colors">Terms of Service</a>
             </div>

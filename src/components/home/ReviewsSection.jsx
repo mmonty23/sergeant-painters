@@ -75,7 +75,7 @@ export default function ReviewsSection() {
   }, []);
 
   return (
-    <section className="py-20 lg:py-28 relative" id="reviews">
+    <section className="py-12 sm:py-16 lg:py-28 relative" id="reviews">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
@@ -92,19 +92,19 @@ export default function ReviewsSection() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center max-w-2xl mx-auto mb-16"
+          className="text-center max-w-2xl mx-auto mb-8 sm:mb-12 lg:mb-16"
         >
-          <span className="text-orange-400 font-semibold tracking-widest text-sm">
+          <span className="text-orange-400 font-semibold tracking-widest text-xs sm:text-sm">
             DISCOVER WHAT OUR CUSTOMERS HAVE TO SAY ABOUT US
           </span>
-          <h2 className="mt-4 text-4xl lg:text-5xl font-black text-white">
+          <h2 className="mt-3 sm:mt-4 text-3xl sm:text-4xl lg:text-5xl font-black text-white">
             REVIEWS
           </h2>
         </motion.div>
 
         {/* Reviews Carousel */}
         <div className="relative max-w-4xl mx-auto">
-          <div className="overflow-hidden relative min-h-[300px]">
+          <div className="overflow-hidden relative min-h-[280px] sm:min-h-[300px]">
             <AnimatePresence initial={false} custom={direction}>
               <motion.div
                 key={currentIndex}
@@ -119,27 +119,27 @@ export default function ReviewsSection() {
                 }}
                 className="absolute inset-0"
               >
-                <div className="bg-white rounded-2xl p-8 lg:p-12 text-center">
+                <div className="bg-white rounded-2xl p-6 sm:p-8 lg:p-12 text-center">
                   {/* Quote Icon */}
-                  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <Quote className="w-8 h-8 text-blue-700" />
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
+                    <Quote className="w-6 h-6 sm:w-8 sm:h-8 text-blue-700" />
                   </div>
 
                   {/* Stars */}
-                  <div className="flex justify-center gap-1 mb-6">
+                  <div className="flex justify-center gap-1 mb-4 sm:mb-6">
                     {[...Array(reviews[currentIndex].rating)].map((_, i) => (
-                      <Star key={i} className="w-6 h-6 fill-orange-400 text-orange-400" />
+                      <Star key={i} className="w-5 h-5 sm:w-6 sm:h-6 fill-orange-400 text-orange-400" />
                     ))}
                   </div>
 
                   {/* Review Text */}
-                  <p className="text-slate-700 text-lg leading-relaxed max-w-2xl mx-auto">
+                  <p className="text-slate-700 text-sm sm:text-base lg:text-lg leading-relaxed max-w-2xl mx-auto">
                     "{reviews[currentIndex].text}"
                   </p>
 
                   {/* Reviewer Name */}
-                  <div className="mt-6">
-                    <p className="font-bold text-slate-900 text-lg">
+                  <div className="mt-4 sm:mt-6">
+                    <p className="font-bold text-slate-900 text-base sm:text-lg">
                       {reviews[currentIndex].name}
                     </p>
                     <div className="flex items-center justify-center gap-2 mt-2">
@@ -157,12 +157,12 @@ export default function ReviewsSection() {
           </div>
 
           {/* Navigation */}
-          <div className="flex justify-center items-center gap-4 mt-8">
+          <div className="flex justify-center items-center gap-3 sm:gap-4 mt-6 sm:mt-8">
             <button
               onClick={() => paginate(-1)}
-              className="w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors"
+              className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors"
             >
-              <ChevronLeft className="w-6 h-6 text-white" />
+              <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
             </button>
 
             {/* Dots */}
@@ -176,7 +176,7 @@ export default function ReviewsSection() {
                   }}
                   className={`w-2 h-2 rounded-full transition-all ${
                     index === currentIndex 
-                      ? 'w-8 bg-orange-400' 
+                      ? 'w-6 sm:w-8 bg-orange-400' 
                       : 'bg-white/30 hover:bg-white/50'
                   }`}
                 />
@@ -185,9 +185,9 @@ export default function ReviewsSection() {
 
             <button
               onClick={() => paginate(1)}
-              className="w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors"
+              className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors"
             >
-              <ChevronRight className="w-6 h-6 text-white" />
+              <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
             </button>
           </div>
         </div>
@@ -197,10 +197,10 @@ export default function ReviewsSection() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mt-12"
+          className="text-center mt-8 sm:mt-12"
         >
           <Link to={createPageUrl('Contact')}>
-            <Button className="bg-orange-500 hover:bg-orange-400 text-blue-900 font-bold px-8 py-6 rounded-full text-lg">
+            <Button className="bg-orange-500 hover:bg-orange-400 text-blue-900 font-bold px-6 sm:px-8 py-4 sm:py-6 rounded-full text-base sm:text-lg">
               CONTACT US NOW
             </Button>
           </Link>
