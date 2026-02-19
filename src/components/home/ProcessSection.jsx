@@ -31,7 +31,7 @@ const steps = [
 
 export default function ProcessSection() {
   return (
-    <section className="py-20 lg:py-28 bg-emerald-800 relative overflow-hidden">
+    <section className="py-20 lg:py-28 bg-blue-700 relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0" style={{
@@ -47,11 +47,11 @@ export default function ProcessSection() {
           viewport={{ once: true }}
           className="text-center max-w-2xl mx-auto mb-16"
         >
-          <span className="text-amber-400 font-semibold tracking-widest text-sm">
+          <span className="text-orange-400 font-semibold tracking-widest text-sm">
             OUR PROCESS
           </span>
           <h2 className="mt-4 text-4xl lg:text-5xl font-black text-white">
-            Simple Steps to Your<br />Perfect Paint Job
+            Simple Steps to Your<br />Perfect Project
           </h2>
         </motion.div>
 
@@ -68,20 +68,20 @@ export default function ProcessSection() {
             >
               {/* Connector Line */}
               {index < steps.length - 1 && (
-                <div className="hidden lg:block absolute top-12 left-1/2 w-full h-0.5 bg-amber-400/30" />
+                <div className="hidden lg:block absolute top-12 left-1/2 w-full h-0.5 bg-orange-400/30" />
               )}
 
               <div className="relative bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center hover:bg-white/20 transition-colors">
                 {/* Number Badge */}
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                  <span className="bg-amber-500 text-emerald-900 font-black text-sm px-4 py-1 rounded-full">
+                  <span className="bg-orange-500 text-blue-900 font-black text-sm px-4 py-1 rounded-full">
                     {step.number}
                   </span>
                 </div>
 
                 {/* Icon */}
                 <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mx-auto mt-4">
-                  <step.icon className="w-8 h-8 text-emerald-700" />
+                  <step.icon className="w-8 h-8 text-blue-700" />
                 </div>
 
                 {/* Content */}

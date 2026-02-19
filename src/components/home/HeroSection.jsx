@@ -51,11 +51,11 @@ export default function HeroSection() {
             transition={{ duration: 0.8 }}
           >
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black text-white leading-[1.1] tracking-tight">
-              SERGEANT<br />
-              <span className="text-amber-400">PAINTERS</span>
+              JUST-N-TIME<br />
+              <span className="text-orange-400">PAINT & PRESSURE WASH</span>
             </h1>
             <p className="mt-6 text-lg text-white/80 leading-relaxed max-w-xl">
-              Sergeant Painters is a veteran-owned and Google-guaranteed painting company offering top-notch painting services, including residential, commercial, interior, and exterior painting, as well as pressure washing and paver sealing. With over 30 years of combined experience, we're committed to bringing exceptional quality to every project we touch.
+              JUST-N-TIME Paint & Pressure Wash is your trusted partner for professional painting and pressure washing services. We specialize in residential and commercial projects, offering interior and exterior painting, pressure washing, and surface cleaning. With years of experience and a commitment to quality, we deliver results that exceed expectations every time.
             </p>
           </motion.div>
 
@@ -65,13 +65,13 @@ export default function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <div className="bg-emerald-800 rounded-2xl p-8 shadow-2xl">
+            <div className="bg-blue-700 rounded-2xl p-8 shadow-2xl">
               {/* Form Logo */}
               <div className="flex justify-center mb-6">
                 <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center shadow-lg">
                   <div className="text-center">
-                    <span className="text-amber-500 text-[10px] tracking-[0.15em] font-semibold block">★ SERGEANT ★</span>
-                    <span className="text-emerald-700 font-black text-lg block -mt-1">PAINTERS</span>
+                    <span className="text-orange-500 text-[10px] tracking-[0.15em] font-semibold block">JUST-N-TIME</span>
+                    <span className="text-blue-700 font-black text-sm block -mt-1">PAINT & WASH</span>
                   </div>
                 </div>
               </div>
@@ -83,7 +83,7 @@ export default function HeroSection() {
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
                   <label className="block text-white text-sm font-medium mb-2">
-                    Full Name <span className="text-amber-400">*</span>
+                    Full Name <span className="text-orange-400">*</span>
                   </label>
                   <Input
                     type="text"
@@ -97,7 +97,7 @@ export default function HeroSection() {
 
                 <div>
                   <label className="block text-white text-sm font-medium mb-2">
-                    Phone <span className="text-amber-400">*</span>
+                    Phone <span className="text-orange-400">*</span>
                   </label>
                   <Input
                     type="tel"
@@ -111,7 +111,7 @@ export default function HeroSection() {
 
                 <div>
                   <label className="block text-white text-sm font-medium mb-2">
-                    Short message about your needs <span className="text-amber-400">*</span>
+                    Short message about your needs <span className="text-orange-400">*</span>
                   </label>
                   <Textarea
                     placeholder="**Your message goes straight to my phone, I'll get back to you as soon as I'm available**"
@@ -127,17 +127,17 @@ export default function HeroSection() {
                     id="terms"
                     checked={formData.agreed}
                     onCheckedChange={(checked) => setFormData({ ...formData, agreed: checked })}
-                    className="mt-1 border-white data-[state=checked]:bg-amber-500 data-[state=checked]:border-amber-500"
+                    className="mt-1 border-white data-[state=checked]:bg-orange-500 data-[state=checked]:border-orange-500"
                   />
                   <label htmlFor="terms" className="text-white/90 text-sm leading-relaxed">
-                    I agree to <a href="#" className="text-amber-400 underline hover:no-underline">terms & conditions</a> provided by the company. By providing my phone number, I agree to receive text messages from the business.
+                    I agree to <a href="#" className="text-orange-400 underline hover:no-underline">terms & conditions</a> provided by the company. By providing my phone number, I agree to receive text messages from the business.
                   </label>
                 </div>
 
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full h-14 bg-amber-500 hover:bg-amber-400 text-emerald-900 font-bold text-lg rounded-lg transition-all"
+                  className="w-full h-14 bg-orange-500 hover:bg-orange-400 text-blue-900 font-bold text-lg rounded-lg transition-all"
                 >
                   {isSubmitting ? (
                     <Loader2 className="w-5 h-5 animate-spin" />

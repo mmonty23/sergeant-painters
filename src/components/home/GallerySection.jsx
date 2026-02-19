@@ -25,7 +25,7 @@ export default function GallerySection() {
           viewport={{ once: true }}
           className="text-center max-w-2xl mx-auto mb-16"
         >
-          <span className="text-amber-500 font-semibold tracking-widest text-sm">
+          <span className="text-orange-500 font-semibold tracking-widest text-sm">
             SEE WHY OUR CUSTOMERS LOVE US
           </span>
           <h2 className="mt-4 text-4xl lg:text-5xl font-black text-slate-900">
@@ -49,9 +49,9 @@ export default function GallerySection() {
                 alt={`Gallery image ${index + 1}`}
                 className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
               />
-              <div className="absolute inset-0 bg-emerald-900/0 group-hover:bg-emerald-900/60 transition-colors duration-300 flex items-center justify-center">
+              <div className="absolute inset-0 bg-blue-900/0 group-hover:bg-blue-900/60 transition-colors duration-300 flex items-center justify-center">
                 <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transform scale-50 group-hover:scale-100 transition-all duration-300">
-                  <ArrowRight className="w-5 h-5 text-emerald-700" />
+                  <ArrowRight className="w-5 h-5 text-blue-700" />
                 </div>
               </div>
             </motion.div>
@@ -65,7 +65,7 @@ export default function GallerySection() {
           viewport={{ once: true }}
           className="text-center mt-12"
         >
-          <Button className="bg-emerald-700 hover:bg-emerald-800 text-white font-semibold px-8 py-6 rounded-full text-lg">
+          <Button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-6 rounded-full text-lg">
             SEE ALL PHOTOS
             <ArrowRight className="ml-2 w-5 h-5" />
           </Button>

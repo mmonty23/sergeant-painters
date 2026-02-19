@@ -53,12 +53,12 @@ export default function Navigation() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <div className="flex items-center gap-2">
-              <div className="w-12 h-12 bg-gradient-to-br from-amber-400 to-amber-500 rounded-full flex items-center justify-center">
-                <span className="text-emerald-800 font-black text-lg">SP</span>
+              <div className="w-12 h-12 bg-gradient-to-br from-orange-400 to-orange-500 rounded-full flex items-center justify-center">
+                <span className="text-blue-800 font-black text-lg">JT</span>
               </div>
               <div className="hidden sm:block">
-                <span className="text-amber-400 text-xs tracking-[0.2em] font-semibold">★ SERGEANT ★</span>
-                <p className="text-white font-black text-xl tracking-wide -mt-1">PAINTERS</p>
+                <span className="text-orange-400 text-xs tracking-[0.15em] font-semibold">JUST-N-TIME</span>
+                <p className="text-white font-black text-xl tracking-wide -mt-1">PAINT & PRESSURE WASH</p>
               </div>
             </div>
           </div>
@@ -74,7 +74,7 @@ export default function Navigation() {
               >
                 <a
                   href={link.href}
-                  className="px-4 py-2 text-white/90 hover:text-amber-400 font-medium text-sm tracking-wide transition-colors flex items-center gap-1"
+                  className="px-4 py-2 text-white/90 hover:text-orange-400 font-medium text-sm tracking-wide transition-colors flex items-center gap-1"
                 >
                   {link.name}
                   {link.dropdown && <ChevronDown className="w-4 h-4" />}
@@ -93,7 +93,7 @@ export default function Navigation() {
                           <a
                             key={item.name}
                             href={item.href}
-                            className="block px-4 py-2 text-slate-700 hover:bg-emerald-50 hover:text-emerald-700 text-sm transition-colors"
+                            className="block px-4 py-2 text-slate-700 hover:bg-blue-50 hover:text-blue-700 text-sm transition-colors"
                           >
                             {item.name}
                           </a>
@@ -108,15 +108,15 @@ export default function Navigation() {
 
           {/* CTA Buttons */}
           <div className="hidden lg:flex items-center gap-3">
-            <Button className="bg-emerald-700 hover:bg-emerald-800 text-white font-semibold px-6 rounded-full">
+            <Button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 rounded-full">
               GET FREE QUOTE
             </Button>
             <a 
-              href="tel:+18774475160"
-              className="flex items-center gap-2 px-4 py-2 border-2 border-amber-400 text-amber-400 rounded-full hover:bg-amber-400 hover:text-slate-900 transition-all font-semibold"
+              href="tel:+18139704390"
+              className="flex items-center gap-2 px-4 py-2 border-2 border-orange-400 text-orange-400 rounded-full hover:bg-orange-400 hover:text-slate-900 transition-all font-semibold"
             >
               <Phone className="w-4 h-4" />
-              (877) 447-5160
+              (813) 970-4390
             </a>
           </div>
 
@@ -144,22 +144,22 @@ export default function Navigation() {
                 <a
                   key={link.name}
                   href={link.href}
-                  className="block px-4 py-3 text-white hover:text-amber-400 font-medium"
+                  className="block px-4 py-3 text-white hover:text-orange-400 font-medium"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.name}
                 </a>
               ))}
               <div className="pt-4 space-y-3">
-                <Button className="w-full bg-emerald-700 hover:bg-emerald-800 text-white font-semibold rounded-full">
+                <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-full">
                   GET FREE QUOTE
                 </Button>
                 <a 
-                  href="tel:+18774475160"
-                  className="flex items-center justify-center gap-2 w-full px-4 py-3 border-2 border-amber-400 text-amber-400 rounded-full font-semibold"
+                  href="tel:+18139704390"
+                  className="flex items-center justify-center gap-2 w-full px-4 py-3 border-2 border-orange-400 text-orange-400 rounded-full font-semibold"
                 >
                   <Phone className="w-4 h-4" />
-                  (877) 447-5160
+                  (813) 970-4390
                 </a>
               </div>
             </div>

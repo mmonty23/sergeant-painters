@@ -7,26 +7,26 @@ const services = [
   {
     icon: Home,
     title: 'Interior Painting',
-    description: 'For a flawless interior paint job that revitalizes your space, Sergeant Painters offers exceptional attention to detail and a professional finish.',
+    description: 'Transform your indoor spaces with our professional interior painting services. We deliver flawless finishes that bring new life to your rooms.',
     image: 'https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=600&q=80',
   },
   {
     icon: Paintbrush,
     title: 'Exterior Painting',
-    description: 'Transform your home\'s exterior with durable, weather-resistant painting that enhances curb appeal and provides long-lasting protection against the elements.',
+    description: 'Enhance your property\'s curb appeal with our expert exterior painting. Weather-resistant coatings that protect and beautify your home or business.',
     image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80',
   },
   {
-    icon: Building2,
-    title: 'Commercial Painting',
-    description: 'At Sergeant Painters, we specialize in delivering top-notch commercial painting services tailored to meet the unique needs of businesses.',
-    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80',
+    icon: Sparkles,
+    title: 'Pressure Washing',
+    description: 'Professional pressure washing services to remove dirt, grime, and mildew. Restore your surfaces to like-new condition with our powerful cleaning.',
+    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
   },
   {
-    icon: Sparkles,
-    title: 'Cleaning and Sealing',
-    description: 'Preserve and protect your surfaces with our professional cleaning and sealing services, designed to enhance durability and reduce maintenance needs.',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
+    icon: Building2,
+    title: 'Commercial Services',
+    description: 'Complete painting and pressure washing solutions for businesses. We work efficiently to minimize disruption to your operations.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80',
   },
 ];
 
@@ -41,7 +41,7 @@ export default function ServicesSection() {
           viewport={{ once: true }}
           className="text-center max-w-2xl mx-auto mb-16"
         >
-          <span className="text-amber-500 font-semibold tracking-widest text-sm">
+          <span className="text-orange-500 font-semibold tracking-widest text-sm">
             WHAT WE ARE BEST AT
           </span>
           <h2 className="mt-4 text-4xl lg:text-5xl font-black text-slate-900">
@@ -69,7 +69,7 @@ export default function ServicesSection() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/40 to-transparent" />
                 <div className="absolute bottom-4 left-4">
-                  <div className="w-12 h-12 bg-amber-500 rounded-xl flex items-center justify-center">
+                  <div className="w-12 h-12 bg-orange-500 rounded-xl flex items-center justify-center">
                     <service.icon className="w-6 h-6 text-white" />
                   </div>
                 </div>
@@ -77,7 +77,7 @@ export default function ServicesSection() {
 
               {/* Content */}
               <div className="p-6">
-                <h3 className="text-xl font-bold text-slate-900 group-hover:text-emerald-700 transition-colors">
+                <h3 className="text-xl font-bold text-slate-900 group-hover:text-blue-700 transition-colors">
                   {service.title}
                 </h3>
                 <p className="mt-3 text-slate-600 leading-relaxed">
@@ -85,7 +85,7 @@ export default function ServicesSection() {
                 </p>
                 <Button
                   variant="link"
-                  className="mt-4 p-0 text-emerald-700 hover:text-emerald-800 font-semibold group/btn"
+                  className="mt-4 p-0 text-blue-700 hover:text-blue-800 font-semibold group/btn"
                 >
                   Learn More
                   <ArrowRight className="ml-2 w-4 h-4 transform group-hover/btn:translate-x-1 transition-transform" />

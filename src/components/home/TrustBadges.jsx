@@ -3,11 +3,11 @@ import { motion } from 'framer-motion';
 import { Shield, MapPin, Clock, Award, CheckCircle } from 'lucide-react';
 
 const badges = [
-  { icon: Shield, label: 'VETERAN OWNED', color: 'text-emerald-600' },
-  { icon: MapPin, label: '100% LOCAL', color: 'text-amber-500' },
-  { icon: Clock, label: '30+ YEARS EXPERIENCE', color: 'text-emerald-600' },
-  { icon: CheckCircle, label: 'INSURED', color: 'text-amber-500' },
-  { icon: Award, label: 'LICENSED', color: 'text-emerald-600' },
+  { icon: Award, label: 'PROFESSIONAL', color: 'text-blue-600' },
+  { icon: MapPin, label: '100% LOCAL', color: 'text-orange-500' },
+  { icon: Clock, label: 'EXPERIENCED', color: 'text-blue-600' },
+  { icon: CheckCircle, label: 'INSURED', color: 'text-orange-500' },
+  { icon: Shield, label: 'LICENSED', color: 'text-blue-600' },
 ];
 
 export default function TrustBadges() {

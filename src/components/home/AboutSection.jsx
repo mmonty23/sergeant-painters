@@ -23,8 +23,8 @@ export default function AboutSection() {
               <div className="absolute inset-0 bg-gradient-to-t from-emerald-900/40 to-transparent" />
             </div>
             {/* Decorative elements */}
-            <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-amber-400 rounded-2xl -z-10" />
-            <div className="absolute -top-6 -left-6 w-24 h-24 border-4 border-emerald-600 rounded-2xl -z-10" />
+            <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-orange-400 rounded-2xl -z-10" />
+            <div className="absolute -top-6 -left-6 w-24 h-24 border-4 border-blue-600 rounded-2xl -z-10" />
           </motion.div>
 
           {/* Content */}
@@ -34,34 +34,34 @@ export default function AboutSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <span className="text-amber-500 font-semibold tracking-widest text-sm">
+            <span className="text-orange-500 font-semibold tracking-widest text-sm">
               ABOUT US
             </span>
             <h2 className="mt-4 text-4xl lg:text-5xl font-black text-slate-900 leading-tight">
-              Painting Excellence,<br />
-              <span className="text-emerald-700">Military Precision</span>
+              Quality Service,<br />
+              <span className="text-blue-700">Every Time</span>
             </h2>
             <div className="mt-6 space-y-4 text-slate-600 leading-relaxed">
               <p>
-                At Sergeant Painters, we proudly combine over three decades of painting experience with the values instilled during our time in the military. Our journey started in service, and now we're dedicated to serving our community with high-quality painting and cleaning services.
+                At JUST-N-TIME Paint & Pressure Wash, we're dedicated to delivering exceptional painting and pressure washing services that transform your property. Our team of skilled professionals takes pride in every project, ensuring attention to detail and customer satisfaction.
               </p>
               <p>
-                We ensure a job well done on every project, from homes to commercial spaces. Our team brings the same discipline, attention to detail, and commitment to excellence that defined our military service to every painting job we undertake.
+                Whether you need a fresh coat of paint for your home or commercial property, or powerful pressure washing to restore your surfaces, we're here to help. We use premium materials and proven techniques to deliver results that last.
               </p>
             </div>
             
             {/* Stats */}
             <div className="mt-10 grid grid-cols-3 gap-6">
               <div className="text-center">
-                <div className="text-4xl font-black text-emerald-700">30+</div>
+                <div className="text-4xl font-black text-blue-700">10+</div>
                 <div className="text-sm text-slate-500 mt-1">Years Experience</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-black text-amber-500">500+</div>
+                <div className="text-4xl font-black text-orange-500">300+</div>
                 <div className="text-sm text-slate-500 mt-1">Projects Done</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-black text-emerald-700">100%</div>
+                <div className="text-4xl font-black text-blue-700">100%</div>
                 <div className="text-sm text-slate-500 mt-1">Satisfaction</div>
               </div>
             </div>

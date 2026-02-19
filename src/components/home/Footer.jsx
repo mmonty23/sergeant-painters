@@ -15,19 +15,19 @@ const quickLinks = [
 const services = [
   'Interior Painting',
   'Exterior Painting',
-  'Commercial Painting',
-  'Cleaning & Sealing',
   'Pressure Washing',
-  'Paver Sealing',
+  'Commercial Services',
+  'Surface Cleaning',
+  'Deck & Fence Painting',
 ];
 
 const serviceAreas = [
-  'Fort Myers',
-  'Cape Coral',
-  'Naples',
-  'Bonita Springs',
-  'Estero',
-  'Sanibel',
+  'Tampa',
+  'St. Petersburg',
+  'Clearwater',
+  'Brandon',
+  'Riverview',
+  'Wesley Chapel',
 ];
 
 export default function Footer() {
@@ -39,25 +39,25 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-2 mb-6">
-              <div className="w-12 h-12 bg-gradient-to-br from-amber-400 to-amber-500 rounded-full flex items-center justify-center">
-                <span className="text-emerald-800 font-black text-lg">SP</span>
+              <div className="w-12 h-12 bg-gradient-to-br from-orange-400 to-orange-500 rounded-full flex items-center justify-center">
+                <span className="text-blue-800 font-black text-lg">JT</span>
               </div>
               <div>
-                <span className="text-amber-400 text-xs tracking-[0.2em] font-semibold">★ SERGEANT ★</span>
-                <p className="text-white font-black text-xl tracking-wide -mt-1">PAINTERS</p>
+                <span className="text-orange-400 text-xs tracking-[0.15em] font-semibold">JUST-N-TIME</span>
+                <p className="text-white font-black text-lg tracking-wide -mt-1">PAINT & WASH</p>
               </div>
             </div>
             <p className="text-slate-400 leading-relaxed mb-6">
-              Veteran-owned painting company delivering exceptional quality with military precision. Serving Southwest Florida with pride.
+              Professional painting and pressure washing services delivering quality results every time. Your trusted local experts.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-amber-500 transition-colors group">
+              <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-orange-500 transition-colors group">
                 <Facebook className="w-5 h-5 text-white group-hover:text-slate-900" />
               </a>
-              <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-amber-500 transition-colors group">
+              <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-orange-500 transition-colors group">
                 <Instagram className="w-5 h-5 text-white group-hover:text-slate-900" />
               </a>
-              <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-amber-500 transition-colors group">
+              <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-orange-500 transition-colors group">
                 <Linkedin className="w-5 h-5 text-white group-hover:text-slate-900" />
               </a>
             </div>
@@ -71,7 +71,7 @@ export default function Footer() {
                 <li key={link.name}>
                   <a 
                     href={link.href}
-                    className="text-slate-400 hover:text-amber-400 transition-colors flex items-center gap-2"
+                    className="text-slate-400 hover:text-orange-400 transition-colors flex items-center gap-2"
                   >
                     <ArrowRight className="w-4 h-4" />
                     {link.name}
@@ -89,7 +89,7 @@ export default function Footer() {
                 <li key={service}>
                   <a 
                     href="#services"
-                    className="text-slate-400 hover:text-amber-400 transition-colors flex items-center gap-2"
+                    className="text-slate-400 hover:text-orange-400 transition-colors flex items-center gap-2"
                   >
                     <ArrowRight className="w-4 h-4" />
                     {service}
@@ -104,26 +104,26 @@ export default function Footer() {
             <h3 className="text-white font-bold text-lg mb-6">Contact Us</h3>
             <div className="space-y-4">
               <a 
-                href="tel:+18774475160"
-                className="flex items-start gap-3 text-slate-400 hover:text-amber-400 transition-colors"
+                href="tel:+18139704390"
+                className="flex items-start gap-3 text-slate-400 hover:text-orange-400 transition-colors"
               >
                 <Phone className="w-5 h-5 mt-0.5 flex-shrink-0" />
-                <span>(877) 447-5160</span>
+                <span>(813) 970-4390</span>
               </a>
               <a 
-                href="mailto:info@sergeantpainters.com"
-                className="flex items-start gap-3 text-slate-400 hover:text-amber-400 transition-colors"
+                href="mailto:justntimewash@gmail.com"
+                className="flex items-start gap-3 text-slate-400 hover:text-orange-400 transition-colors"
               >
                 <Mail className="w-5 h-5 mt-0.5 flex-shrink-0" />
-                <span>info@sergeantpainters.com</span>
+                <span>justntimewash@gmail.com</span>
               </a>
               <div className="flex items-start gap-3 text-slate-400">
                 <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0" />
-                <span>Southwest Florida</span>
+                <span>Tampa Bay Area</span>
               </div>
               <div className="flex items-start gap-3 text-slate-400">
                 <Clock className="w-5 h-5 mt-0.5 flex-shrink-0" />
-                <span>Mon - Sat: 7:00 AM - 6:00 PM</span>
+                <span>Mon - Sat: 7:00 AM - 11:00 PM</span>
               </div>
             </div>
 
@@ -136,7 +136,7 @@ export default function Footer() {
                   placeholder="Your email"
                   className="bg-white/10 border-white/20 text-white placeholder:text-slate-500"
                 />
-                <Button className="bg-amber-500 hover:bg-amber-400 text-slate-900 font-semibold px-4">
+                <Button className="bg-orange-500 hover:bg-orange-400 text-slate-900 font-semibold px-4">
                   <ArrowRight className="w-5 h-5" />
                 </Button>
               </div>
@@ -164,10 +164,10 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
-            <p>© 2024 Sergeant Painters. All rights reserved.</p>
+            <p>© 2024 JUST-N-TIME Paint & Pressure Wash. All rights reserved.</p>
             <div className="flex gap-6">
-              <a href="#" className="hover:text-amber-400 transition-colors">Privacy Policy</a>
-              <a href="#" className="hover:text-amber-400 transition-colors">Terms of Service</a>
+              <a href="#" className="hover:text-orange-400 transition-colors">Privacy Policy</a>
+              <a href="#" className="hover:text-orange-400 transition-colors">Terms of Service</a>
             </div>
           </div>
         </div>

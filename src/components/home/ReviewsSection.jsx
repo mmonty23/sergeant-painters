@@ -5,33 +5,33 @@ import { Button } from "@/components/ui/button";
 
 const reviews = [
   {
-    name: 'Pat Racette',
-    text: 'I used Sergeant Painters for both complete interior and exterior painting. They did a great job at a great price. Andrew was very informative, friendly, helpful and flexible throughout the process. The painting crews were excellent and professional. I highly recommend using Sergeants Painters!',
+    name: 'Michael Torres',
+    text: 'JUST-N-TIME did an amazing job on our home! The painting was flawless and the team was professional from start to finish. They completed the work on schedule and the price was very reasonable. Highly recommend!',
     rating: 5,
   },
   {
-    name: 'Jan Nowlan',
-    text: 'Sergeant painters just completed painting the exterior of my house. The whole process from beginning to end was excellent. Andrew kept in contact with me regularly. They began the next day after hiring. The three fellows who did the job were meticulous, taking their time to make sure everything was right.',
+    name: 'Sarah Johnson',
+    text: 'Excellent pressure washing service! Our driveway and patio look brand new. The team was courteous, efficient, and cleaned up perfectly after the job. Will definitely use them again!',
     rating: 5,
   },
   {
-    name: 'Debbie V',
-    text: 'Sergeant Painters did a fabulous job on the exterior of our house. They took time to make sure it was done right! On time and courteous. Highly recommend!!!',
+    name: 'David Martinez',
+    text: 'Just had our office building painted by JUST-N-TIME. They worked around our schedule and did a fantastic job. Very professional and the quality is outstanding!',
     rating: 5,
   },
   {
-    name: 'Jared Fischer',
-    text: 'Andrew was a pleasure to work with and he did an excellent job sealing our pavers. Highly recommend!',
+    name: 'Lisa Anderson',
+    text: 'Great experience! They pressure washed our entire house exterior and it looks incredible. Very responsive and fair pricing. Can\'t recommend them enough!',
     rating: 5,
   },
   {
-    name: 'Elizabeth Saucedo',
-    text: 'Beautiful work at an affordable price!!!! You can\'t go wrong with Sergeant Painters!!!!',
+    name: 'Robert Chen',
+    text: 'Outstanding interior painting job. Attention to detail was impressive and they were very careful with our furniture. The crew was respectful and professional.',
     rating: 5,
   },
   {
-    name: 'Taylor Ochoa',
-    text: 'I have nothing but praise for this man and his company. He is beyond professional and a kind man for sure. I wanted our house all done up and painted for my family who was coming into town and with a tight timeline he made sure it was done perfectly.',
+    name: 'Amanda Wright',
+    text: 'Phenomenal service! Quick response, great communication, and beautiful results. Our home looks brand new thanks to their amazing work!',
     rating: 5,
   },
 ];
@@ -82,7 +82,7 @@ export default function ReviewsSection() {
           viewport={{ once: true }}
           className="text-center max-w-2xl mx-auto mb-16"
         >
-          <span className="text-amber-400 font-semibold tracking-widest text-sm">
+          <span className="text-orange-400 font-semibold tracking-widest text-sm">
             DISCOVER WHAT OUR CUSTOMERS HAVE TO SAY ABOUT US
           </span>
           <h2 className="mt-4 text-4xl lg:text-5xl font-black text-white">
@@ -109,14 +109,14 @@ export default function ReviewsSection() {
               >
                 <div className="bg-white rounded-2xl p-8 lg:p-12 text-center">
                   {/* Quote Icon */}
-                  <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <Quote className="w-8 h-8 text-emerald-700" />
+                  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <Quote className="w-8 h-8 text-blue-700" />
                   </div>
 
                   {/* Stars */}
                   <div className="flex justify-center gap-1 mb-6">
                     {[...Array(reviews[currentIndex].rating)].map((_, i) => (
-                      <Star key={i} className="w-6 h-6 fill-amber-400 text-amber-400" />
+                      <Star key={i} className="w-6 h-6 fill-orange-400 text-orange-400" />
                     ))}
                   </div>
 
@@ -164,7 +164,7 @@ export default function ReviewsSection() {
                   }}
                   className={`w-2 h-2 rounded-full transition-all ${
                     index === currentIndex 
-                      ? 'w-8 bg-amber-400' 
+                      ? 'w-8 bg-orange-400' 
                       : 'bg-white/30 hover:bg-white/50'
                   }`}
                 />
@@ -187,7 +187,7 @@ export default function ReviewsSection() {
           viewport={{ once: true }}
           className="text-center mt-12"
         >
-          <Button className="bg-amber-500 hover:bg-amber-400 text-emerald-900 font-bold px-8 py-6 rounded-full text-lg">
+          <Button className="bg-orange-500 hover:bg-orange-400 text-blue-900 font-bold px-8 py-6 rounded-full text-lg">
             CONTACT US NOW
           </Button>
         </motion.div>
