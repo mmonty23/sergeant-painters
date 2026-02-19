@@ -92,17 +92,17 @@ export default function Blog() {
       </nav>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-700 to-blue-900 text-white py-20">
+      <section className="bg-gradient-to-br from-blue-700 to-blue-900 text-white py-12 sm:py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="text-5xl lg:text-6xl font-black mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-4 sm:mb-6">
               Our <span className="text-orange-400">Blog</span>
             </h1>
-            <p className="text-xl text-white/80 max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg lg:text-xl text-white/90 max-w-2xl mx-auto px-4">
               Tips, tricks, and insights about painting and pressure washing from the experts at JUST-N-TIME
             </p>
           </motion.div>
@@ -111,13 +111,13 @@ export default function Blog() {
 
       {/* Category Filter */}
       <section className="bg-white border-b border-slate-200 sticky top-0 z-10 shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <div className="flex flex-wrap gap-3 justify-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 sm:py-4">
+          <div className="flex flex-wrap gap-2 sm:gap-3 justify-center">
             {categories.map((category) => (
               <button
                 key={category}
                 onClick={() => setSelectedCategory(category)}
-                className={`px-4 py-2 rounded-full font-medium transition-all ${
+                className={`px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium transition-all ${
                   selectedCategory === category
                     ? 'bg-blue-600 text-white shadow-lg'
                     : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
@@ -131,9 +131,9 @@ export default function Blog() {
       </section>
 
       {/* Blog Posts Grid */}
-      <section className="py-16">
+      <section className="py-8 sm:py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {filteredPosts.map((post, index) => (
               <motion.article
                 key={post.id}
@@ -143,30 +143,30 @@ export default function Blog() {
                 className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group"
               >
                 {/* Image */}
-                <div className="relative h-56 overflow-hidden">
+                <div className="relative h-48 sm:h-56 overflow-hidden">
                   <img
                     src={post.image}
                     alt={post.title}
                     className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
                   />
-                  <div className="absolute top-4 left-4">
-                    <span className="bg-orange-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
+                  <div className="absolute top-3 sm:top-4 left-3 sm:left-4">
+                    <span className="bg-orange-500 text-white px-2.5 sm:px-3 py-1 rounded-full text-xs font-semibold">
                       {post.category}
                     </span>
                   </div>
                 </div>
 
                 {/* Content */}
-                <div className="p-6">
-                  <h2 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-700 transition-colors line-clamp-2">
+                <div className="p-4 sm:p-6">
+                  <h2 className="text-lg sm:text-xl font-bold text-slate-900 mb-2 sm:mb-3 group-hover:text-blue-700 transition-colors line-clamp-2">
                     {post.title}
                   </h2>
-                  <p className="text-slate-600 mb-4 line-clamp-3">
+                  <p className="text-sm sm:text-base text-slate-600 mb-3 sm:mb-4 line-clamp-3">
                     {post.excerpt}
                   </p>
 
                   {/* Meta */}
-                  <div className="flex items-center gap-4 text-sm text-slate-500 mb-4">
+                  <div className="flex items-center gap-3 sm:gap-4 text-xs sm:text-sm text-slate-500 mb-3 sm:mb-4">
                     <div className="flex items-center gap-1">
                       <Calendar className="w-4 h-4" />
                       <span>{post.date}</span>
@@ -200,9 +200,9 @@ export default function Blog() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-blue-700 py-16">
+      <section className="bg-blue-700 py-12 sm:py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl lg:text-4xl font-black text-white mb-4">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white mb-3 sm:mb-4">
             Ready to Transform Your Property?
           </h2>
           <p className="text-white/80 text-lg mb-8">

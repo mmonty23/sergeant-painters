@@ -95,39 +95,39 @@ export default function Contact() {
     <div className="min-h-screen">
       <HomeButton />
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 py-24 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 py-12 sm:py-16 lg:py-24 overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=1200')] bg-cover bg-center opacity-20"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6">
             CONTACT US
           </h1>
-          <p className="text-xl text-slate-300 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg lg:text-xl text-slate-300 max-w-2xl mx-auto px-4">
             Get in touch with any questions or comments and we'll be happy to help.
           </p>
-          <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row gap-2 sm:gap-4 justify-center items-center">
             <div className="flex flex-col sm:flex-row gap-2 items-center">
-              <span className="text-orange-400 text-3xl">↓</span>
-              <span className="text-orange-400 text-3xl hidden sm:block">↓</span>
-              <span className="text-orange-400 text-3xl hidden sm:block">↓</span>
+              <span className="text-orange-400 text-2xl sm:text-3xl">↓</span>
+              <span className="text-orange-400 text-2xl sm:text-3xl hidden sm:block">↓</span>
+              <span className="text-orange-400 text-2xl sm:text-3xl hidden sm:block">↓</span>
             </div>
           </div>
         </div>
       </section>
 
       {/* Contact Form Section */}
-      <section className="py-20 bg-slate-50">
+      <section className="py-12 sm:py-16 lg:py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12">
             {/* Left Column - Contact Info */}
             <div>
-              <h2 className="text-4xl font-bold text-slate-900 mb-6">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 mb-4 sm:mb-6">
                 Contact Us For a Free Quote
               </h2>
-              <p className="text-lg text-slate-600 mb-8">
+              <p className="text-base sm:text-lg text-slate-600 mb-6 sm:mb-8">
                 Contact us by filling in the form or by using any of the methods below and we'll get back to you within 24 hours
               </p>
 
-              <div className="space-y-6 mb-8">
+              <div className="space-y-4 sm:space-y-6 mb-6 sm:mb-8">
                 <div className="flex items-start gap-4">
                   <Mail className="w-6 h-6 text-orange-500 mt-1" />
                   <div>
@@ -150,18 +150,18 @@ export default function Contact() {
               </div>
 
               {/* Image */}
-              <div className="rounded-lg overflow-hidden shadow-lg">
+              <div className="rounded-lg overflow-hidden shadow-lg hidden sm:block">
                 <img 
                   src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6997137b3b52a1df864f0b6d/1683eafbc_southernliving.png" 
                   alt="Pressure Washing Service" 
-                  className="w-full h-64 object-cover"
+                  className="w-full h-48 sm:h-64 object-cover"
                 />
               </div>
             </div>
 
             {/* Right Column - Form */}
-            <div className="bg-blue-700 rounded-2xl shadow-2xl p-8" id="quote-form">
-              <h3 className="text-2xl font-bold text-white text-center mb-6">GET A FREE QUOTE</h3>
+            <div className="bg-blue-700 rounded-2xl shadow-2xl p-6 sm:p-8" id="quote-form">
+              <h3 className="text-xl sm:text-2xl font-bold text-white text-center mb-4 sm:mb-6">GET A FREE QUOTE</h3>
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
                   <label className="block text-white text-sm font-medium mb-2">

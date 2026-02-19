@@ -32,25 +32,25 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <section className="py-20 lg:py-28 bg-slate-50" id="services">
+    <section className="py-12 sm:py-16 lg:py-28 bg-slate-50" id="services">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center max-w-2xl mx-auto mb-16"
+          className="text-center max-w-2xl mx-auto mb-8 sm:mb-12 lg:mb-16"
         >
-          <span className="text-orange-500 font-semibold tracking-widest text-sm">
+          <span className="text-orange-500 font-semibold tracking-widest text-xs sm:text-sm">
             WHAT WE ARE BEST AT
           </span>
-          <h2 className="mt-4 text-4xl lg:text-5xl font-black text-slate-900">
+          <h2 className="mt-3 sm:mt-4 text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900">
             OUR SERVICES
           </h2>
         </motion.div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid sm:grid-cols-2 gap-6 sm:gap-8">
           {services.map((service, index) => (
             <motion.div
               key={service.title}
@@ -61,26 +61,26 @@ export default function ServicesSection() {
               className="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500"
             >
               {/* Image */}
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-40 sm:h-48 overflow-hidden">
                 <img
                   src={service.image}
                   alt={service.title}
                   className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/40 to-transparent" />
-                <div className="absolute bottom-4 left-4">
-                  <div className="w-12 h-12 bg-orange-500 rounded-xl flex items-center justify-center">
-                    <service.icon className="w-6 h-6 text-white" />
+                <div className="absolute bottom-3 sm:bottom-4 left-3 sm:left-4">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-orange-500 rounded-xl flex items-center justify-center">
+                    <service.icon className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                   </div>
                 </div>
               </div>
 
               {/* Content */}
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-slate-900 group-hover:text-blue-700 transition-colors">
+              <div className="p-5 sm:p-6">
+                <h3 className="text-lg sm:text-xl font-bold text-slate-900 group-hover:text-blue-700 transition-colors">
                   {service.title}
                 </h3>
-                <p className="mt-3 text-slate-600 leading-relaxed">
+                <p className="mt-2 sm:mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">
                   {service.description}
                 </p>
                 <Button

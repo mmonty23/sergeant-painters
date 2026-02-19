@@ -16,25 +16,25 @@ const galleryImages = [
 
 export default function GallerySection() {
   return (
-    <section className="py-20 lg:py-28 bg-white" id="gallery">
+    <section className="py-12 sm:py-16 lg:py-28 bg-white" id="gallery">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center max-w-2xl mx-auto mb-16"
+          className="text-center max-w-2xl mx-auto mb-8 sm:mb-12 lg:mb-16"
         >
-          <span className="text-orange-500 font-semibold tracking-widest text-sm">
+          <span className="text-orange-500 font-semibold tracking-widest text-xs sm:text-sm">
             SEE WHY OUR CUSTOMERS LOVE US
           </span>
-          <h2 className="mt-4 text-4xl lg:text-5xl font-black text-slate-900">
+          <h2 className="mt-3 sm:mt-4 text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900">
             SEE OUR WORK
           </h2>
         </motion.div>
 
         {/* Gallery Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
           {galleryImages.map((image, index) => (
             <motion.div
               key={index}
@@ -63,12 +63,12 @@ export default function GallerySection() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mt-12"
+          className="text-center mt-8 sm:mt-12"
         >
           <a href="#gallery">
-            <Button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-6 rounded-full text-lg">
+            <Button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 sm:px-8 py-4 sm:py-6 rounded-full text-base sm:text-lg">
               SEE ALL PHOTOS
-              <ArrowRight className="ml-2 w-5 h-5" />
+              <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
             </Button>
           </a>
         </motion.div>

@@ -39,22 +39,22 @@ export default function HeroSection() {
           alt="Florida House with Palm Trees"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/60 to-slate-900/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/75 to-slate-900/60" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-24">
+        <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-20 items-center">
           {/* Left Content */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black text-white leading-[1.1] tracking-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-white leading-tight tracking-tight">
               JUST-N-TIME<br />
               <span className="text-orange-400">PAINT & PRESSURE WASH</span>
             </h1>
-            <p className="mt-6 text-lg text-white/80 leading-relaxed max-w-xl">
+            <p className="mt-4 sm:mt-6 text-base sm:text-lg text-white/90 leading-relaxed max-w-xl">
               JUST-N-TIME Paint & Pressure Wash is your trusted partner for professional painting and pressure washing services. We specialize in residential and commercial projects, offering interior and exterior painting, pressure washing, and surface cleaning. With years of experience and a commitment to quality, we deliver results that exceed expectations every time.
             </p>
           </motion.div>
@@ -66,10 +66,10 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 0.2 }}
             id="quote-form"
           >
-            <div className="bg-blue-700 rounded-2xl p-8 shadow-2xl">
+            <div className="bg-blue-700 rounded-2xl p-6 sm:p-8 shadow-2xl">
               {/* Form Logo */}
-              <div className="flex justify-center mb-6">
-                <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center shadow-lg">
+              <div className="flex justify-center mb-4 sm:mb-6">
+                <div className="w-20 h-20 sm:w-24 sm:h-24 bg-white rounded-full flex items-center justify-center shadow-lg">
                   <img 
                     src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6997137b3b52a1df864f0b6d/95c894654_logo.png" 
                     alt="JUST-N-TIME Paint & Wash Logo"
@@ -79,7 +79,7 @@ export default function HeroSection() {
                 </div>
               </div>
 
-              <h2 className="text-2xl font-bold text-white text-center mb-6">
+              <h2 className="text-xl sm:text-2xl font-bold text-white text-center mb-4 sm:mb-6">
                 GET A FREE QUOTE
               </h2>
 
