@@ -152,8 +152,8 @@ export default function Contact() {
               {/* Image */}
               <div className="rounded-lg overflow-hidden shadow-lg">
                 <img 
-                  src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600" 
-                  alt="Painting Service" 
+                  src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?w=600" 
+                  alt="Pressure Washing Service" 
                   className="w-full h-64 object-cover"
                 />
               </div>
