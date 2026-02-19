@@ -65,10 +65,12 @@ export default function GallerySection() {
           viewport={{ once: true }}
           className="text-center mt-12"
         >
-          <Button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-6 rounded-full text-lg">
-            SEE ALL PHOTOS
-            <ArrowRight className="ml-2 w-5 h-5" />
-          </Button>
+          <a href="#gallery">
+            <Button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-6 rounded-full text-lg">
+              SEE ALL PHOTOS
+              <ArrowRight className="ml-2 w-5 h-5" />
+            </Button>
+          </a>
         </motion.div>
       </div>
     </section>

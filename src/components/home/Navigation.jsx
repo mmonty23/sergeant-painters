@@ -22,12 +22,21 @@ const navLinks = [
     dropdown: [
       { name: 'Fort Myers', href: '#' },
       { name: 'Cape Coral', href: '#' },
-      { name: 'Naples', href: '#' },
-      { name: 'Bonita Springs', href: '#' },
+      { name: 'Iona', href: '#' },
+      { name: 'Fort Myers Beach', href: '#' },
+      { name: 'Sanibel', href: '#' },
+      { name: 'Captiva', href: '#' },
+      { name: 'Arborwood', href: '#' },
+      { name: 'Corkscrew', href: '#' },
       { name: 'Estero', href: '#' },
+      { name: 'Bonita Springs', href: '#' },
+      { name: 'Bonita Beach', href: '#' },
+      { name: 'Barefoot Beach', href: '#' },
+      { name: 'Miromar Lakes', href: '#' },
+      { name: 'Naples', href: '#' },
     ]
   },
-  { name: 'Blog', href: '#' },
+  { name: 'Blog', href: '/Blog' },
   { name: 'Contact', href: '#contact' },
 ];
 
@@ -108,9 +117,11 @@ export default function Navigation() {
 
           {/* CTA Buttons */}
           <div className="hidden lg:flex items-center gap-3">
-            <Button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 rounded-full">
-              GET FREE QUOTE
-            </Button>
+            <a href="#contact">
+              <Button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 rounded-full">
+                GET FREE QUOTE
+              </Button>
+            </a>
             <a 
               href="tel:+18139704390"
               className="flex items-center gap-2 px-4 py-2 border-2 border-orange-400 text-orange-400 rounded-full hover:bg-orange-400 hover:text-slate-900 transition-all font-semibold"
@@ -151,9 +162,11 @@ export default function Navigation() {
                 </a>
               ))}
               <div className="pt-4 space-y-3">
-                <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-full">
-                  GET FREE QUOTE
-                </Button>
+                <a href="#contact" onClick={() => setIsOpen(false)}>
+                  <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-full">
+                    GET FREE QUOTE
+                  </Button>
+                </a>
                 <a 
                   href="tel:+18139704390"
                   className="flex items-center justify-center gap-2 w-full px-4 py-3 border-2 border-orange-400 text-orange-400 rounded-full font-semibold"

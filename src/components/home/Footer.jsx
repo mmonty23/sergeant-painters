@@ -22,12 +22,20 @@ const services = [
 ];
 
 const serviceAreas = [
-  'Tampa',
-  'St. Petersburg',
-  'Clearwater',
-  'Brandon',
-  'Riverview',
-  'Wesley Chapel',
+  'Fort Myers',
+  'Cape Coral',
+  'Iona',
+  'Fort Myers Beach',
+  'Sanibel',
+  'Captiva',
+  'Arborwood',
+  'Corkscrew',
+  'Estero',
+  'Bonita Springs',
+  'Bonita Beach',
+  'Barefoot Beach',
+  'Miromar Lakes',
+  'Naples',
 ];
 
 export default function Footer() {

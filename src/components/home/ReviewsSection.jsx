@@ -187,9 +187,11 @@ export default function ReviewsSection() {
           viewport={{ once: true }}
           className="text-center mt-12"
         >
-          <Button className="bg-orange-500 hover:bg-orange-400 text-blue-900 font-bold px-8 py-6 rounded-full text-lg">
-            CONTACT US NOW
-          </Button>
+          <a href="#contact">
+            <Button className="bg-orange-500 hover:bg-orange-400 text-blue-900 font-bold px-8 py-6 rounded-full text-lg">
+              CONTACT US NOW
+            </Button>
+          </a>
         </motion.div>
       </div>
     </section>
