@@ -51,6 +51,7 @@ import Blog from './pages/Blog';
 import Contact from './pages/Contact';
 import GoogleReview from './pages/GoogleReview';
 import Home from './pages/Home';
+import GHL from './pages/GHL';
 
 
 export const PAGES = {
@@ -58,6 +59,7 @@ export const PAGES = {
     "Contact": Contact,
     "GoogleReview": GoogleReview,
     "Home": Home,
+    "GHL": GHL,
 }
 
 export const pagesConfig = {
