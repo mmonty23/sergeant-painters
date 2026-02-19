@@ -152,7 +152,7 @@ export default function Contact() {
               {/* Image */}
               <div className="rounded-lg overflow-hidden shadow-lg">
                 <img 
-                  src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?w=600" 
+                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6997137b3b52a1df864f0b6d/1683eafbc_southernliving.png" 
                   alt="Pressure Washing Service" 
                   className="w-full h-64 object-cover"
                 />
