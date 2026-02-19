@@ -93,6 +93,7 @@ export default function Contact() {
 
   return (
     <div className="min-h-screen">
+      <HomeButton />
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 py-24 overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=1200')] bg-cover bg-center opacity-20"></div>
