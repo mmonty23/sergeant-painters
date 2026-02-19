@@ -77,6 +77,7 @@ const serviceAreas = [
 export default function Contact() {
   const [formData, setFormData] = useState({
     fullName: '',
+    email: '',
     phone: '',
     message: '',
     agreeToTerms: false
