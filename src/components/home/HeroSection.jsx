@@ -35,7 +35,7 @@ export default function HeroSection() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://assets.cdn.filesafe.space/Eq2dpCqcs3qkFVgmbkxb/media/679dc8dc2b1c5bc78766de5e.jpeg"
+          src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1920&q=80"
           alt="Painted House"
           className="w-full h-full object-cover"
         />
