@@ -156,25 +156,25 @@ export default function Contact() {
             </div>
 
             {/* Right Column - Form */}
-            <div className="bg-white rounded-2xl shadow-xl p-8" id="quote-form">
-              <h3 className="text-2xl font-bold text-slate-900 mb-6">GET A FREE QUOTE</h3>
-              <form onSubmit={handleSubmit} className="space-y-6">
+            <div className="bg-blue-700 rounded-2xl shadow-2xl p-8" id="quote-form">
+              <h3 className="text-2xl font-bold text-white text-center mb-6">GET A FREE QUOTE</h3>
+              <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
-                  <label className="block text-sm font-medium text-slate-700 mb-2">
-                    Full Name *
+                  <label className="block text-white text-sm font-medium mb-2">
+                    Full Name <span className="text-orange-400">*</span>
                   </label>
                   <Input
                     required
-                    placeholder="John Doe"
+                    placeholder="John Smith"
                     value={formData.fullName}
                     onChange={(e) => setFormData({...formData, fullName: e.target.value})}
-                    className="w-full"
+                    className="bg-white border-0 h-12 rounded-lg"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-slate-700 mb-2">
-                    Email *
+                  <label className="block text-white text-sm font-medium mb-2">
+                    Email <span className="text-orange-400">*</span>
                   </label>
                   <Input
                     type="email"
@@ -182,52 +182,52 @@ export default function Contact() {
                     placeholder="john@example.com"
                     value={formData.email}
                     onChange={(e) => setFormData({...formData, email: e.target.value})}
-                    className="w-full"
+                    className="bg-white border-0 h-12 rounded-lg"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-slate-700 mb-2">
-                    Phone *
+                  <label className="block text-white text-sm font-medium mb-2">
+                    Phone <span className="text-orange-400">*</span>
                   </label>
                   <Input
                     type="tel"
                     required
-                    placeholder="(123) 456-7890"
+                    placeholder="(808) 555-1234"
                     value={formData.phone}
                     onChange={(e) => setFormData({...formData, phone: e.target.value})}
-                    className="w-full"
+                    className="bg-white border-0 h-12 rounded-lg"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-slate-700 mb-2">
-                    Message *
+                  <label className="block text-white text-sm font-medium mb-2">
+                    Short message about your needs <span className="text-orange-400">*</span>
                   </label>
                   <Textarea
                     required
-                    rows={5}
-                    placeholder="Tell us about your project..."
+                    placeholder="**Your message goes straight to my phone, I'll get back to you as soon as I'm available**"
                     value={formData.message}
                     onChange={(e) => setFormData({...formData, message: e.target.value})}
-                    className="w-full"
+                    className="bg-white border-0 rounded-lg min-h-[100px] resize-none"
                   />
                 </div>
 
-                <div className="flex items-start gap-2">
+                <div className="flex items-start gap-3">
                   <Checkbox
                     id="terms"
                     checked={formData.agreeToTerms}
                     onCheckedChange={(checked) => setFormData({...formData, agreeToTerms: checked})}
+                    className="mt-1 border-white data-[state=checked]:bg-orange-500 data-[state=checked]:border-orange-500"
                   />
-                  <label htmlFor="terms" className="text-sm text-slate-600">
-                    I agree to terms & conditions provided by the company. By providing my phone number, I agree to receive text messages from the business.
+                  <label htmlFor="terms" className="text-white/90 text-sm leading-relaxed">
+                    I agree to <a href="#" className="text-orange-400 underline hover:no-underline">terms & conditions</a> provided by the company. By providing my phone number, I agree to receive text messages from the business.
                   </label>
                 </div>
 
                 <Button 
                   type="submit" 
-                  className="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 text-lg"
+                  className="w-full h-14 bg-orange-500 hover:bg-orange-400 text-blue-900 font-bold text-lg rounded-lg"
                   disabled={!formData.agreeToTerms}
                 >
                   SEND
