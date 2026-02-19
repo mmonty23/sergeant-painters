@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { ArrowLeft, Calendar, Clock, User, ArrowRight } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { motion } from 'framer-motion';
-import { createPageUrl } from './utils';
+import { createPageUrl } from '../utils';
 
 const blogPosts = [
   {
