@@ -69,11 +69,13 @@ export default function HeroSection() {
             <div className="bg-blue-700 rounded-2xl p-8 shadow-2xl">
               {/* Form Logo */}
               <div className="flex justify-center mb-6">
-                <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center shadow-lg">
-                  <div className="text-center">
-                    <span className="text-orange-500 text-[10px] tracking-[0.15em] font-semibold block">JUST-N-TIME</span>
-                    <span className="text-blue-700 font-black text-sm block -mt-1">PAINT & WASH</span>
-                  </div>
+                <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center shadow-lg p-2">
+                  <img 
+                    src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6997137b3b52a1df864f0b6d/95c894654_logo.png" 
+                    alt="JUST-N-TIME Paint & Wash Logo"
+                    className="w-full h-full object-contain"
+                    style={{ filter: 'hue-rotate(-10deg) saturate(1.2)' }}
+                  />
                 </div>
               </div>
 
