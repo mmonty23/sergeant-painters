@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import { Phone, Mail, MapPin, Star } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { createPageUrl } from '../utils';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
+import HomeButton from '@/components/HomeButton';
 
 const reviews = [
   {
@@ -264,9 +267,11 @@ export default function Contact() {
           </div>
 
           <div className="text-center">
-            <Button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8">
-              REVIEW US ON GOOGLE
-            </Button>
+            <Link to={createPageUrl('GoogleReview')}>
+              <Button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8">
+                REVIEW US ON GOOGLE
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
