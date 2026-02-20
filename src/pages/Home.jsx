@@ -17,30 +17,24 @@ import Footer from '@/components/home/Footer';
 import Navigation from '@/components/home/Navigation';
 
 export default function Home() {
-  const scriptRef = React.useRef(null);
-
-  useEffect(() => {
-    if (!scriptRef.current) {
-      const script = document.createElement('script');
-      script.src = 'https://widgets.leadconnectorhq.com/loader.js';
-      script.setAttribute('data-resources-url', 'https://widgets.leadconnectorhq.com/chat-widget/loader.js');
-      script.setAttribute('data-widget-id', '6998c13f2473549c509c8631');
-      document.body.appendChild(script);
-      scriptRef.current = script;
-    }
-  }, []);
-
   return (
-    <div className="min-h-screen bg-white">
-      <Navigation />
-      <HeroSection />
-      <TrustBadges />
-      <AboutSection />
-      <ServicesSection />
-      <ProcessSection />
-      <GallerySection />
-      <ReviewsSection />
-      <Footer />
-    </div>
+    <>
+      <div className="min-h-screen bg-white">
+        <Navigation />
+        <HeroSection />
+        <TrustBadges />
+        <AboutSection />
+        <ServicesSection />
+        <ProcessSection />
+        <GallerySection />
+        <ReviewsSection />
+        <Footer />
+      </div>
+      <script 
+        src="https://widgets.leadconnectorhq.com/loader.js" 
+        data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" 
+        data-widget-id="6998c13f2473549c509c8631"
+      />
+    </>
   );
 }
