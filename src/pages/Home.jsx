@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, Phone, ChevronDown, Star, Shield, MapPin, Clock, Award, Users, CheckCircle, ArrowRight, Mail, Facebook, Instagram, Linkedin } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -17,6 +17,20 @@ import Footer from '@/components/home/Footer';
 import Navigation from '@/components/home/Navigation';
 
 export default function Home() {
+  useEffect(() => {
+    // Load Go High Level chatbot
+    const script = document.createElement('script');
+    script.src = 'https://widgets.leadconnectorhq.com/loader.js';
+    script.setAttribute('data-resources-url', 'https://widgets.leadconnectorhq.com/chat-widget/loader.js');
+    script.setAttribute('data-widget-id', '6998c13f2473549c509c8631');
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
