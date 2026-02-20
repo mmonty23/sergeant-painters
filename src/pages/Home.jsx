@@ -28,9 +28,6 @@ export default function Home() {
       <GallerySection />
       <ReviewsSection />
       <Footer />
-      <div dangerouslySetInnerHTML={{
-        __html: '<script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="6998c13f2473549c509c8631"></script>'
-      }} />
     </div>
   );
 }
