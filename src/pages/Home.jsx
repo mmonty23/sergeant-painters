@@ -22,11 +22,13 @@ export default function Home() {
     script.src = 'https://widgets.leadconnectorhq.com/loader.js';
     script.setAttribute('data-resources-url', 'https://widgets.leadconnectorhq.com/chat-widget/loader.js');
     script.setAttribute('data-widget-id', '6998c13f2473549c509c8631');
+    script.async = true;
     document.body.appendChild(script);
 
     return () => {
-      const scripts = document.querySelectorAll('script[src="https://widgets.leadconnectorhq.com/loader.js"]');
-      scripts.forEach(s => s.remove());
+      if (script.parentNode) {
+        script.parentNode.removeChild(script);
+      }
     };
   }, []);
 
@@ -41,14 +43,6 @@ export default function Home() {
       <GallerySection />
       <ReviewsSection />
       <Footer />
-      
-      <div dangerouslySetInnerHTML={{
-        __html: `<script 
-          src="https://widgets.leadconnectorhq.com/loader.js"  
-          data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" 
-          data-widget-id="6998c13f2473549c509c8631">
-        </script>`
-      }} />
     </div>
   );
 }
