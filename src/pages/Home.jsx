@@ -18,17 +18,15 @@ import Navigation from '@/components/home/Navigation';
 
 export default function Home() {
   useEffect(() => {
-    // Load Go High Level chatbot
     const script = document.createElement('script');
     script.src = 'https://widgets.leadconnectorhq.com/loader.js';
     script.setAttribute('data-resources-url', 'https://widgets.leadconnectorhq.com/chat-widget/loader.js');
     script.setAttribute('data-widget-id', '6998c13f2473549c509c8631');
-    document.head.appendChild(script);
+    document.body.appendChild(script);
 
     return () => {
-      if (document.head.contains(script)) {
-        document.head.removeChild(script);
-      }
+      const scripts = document.querySelectorAll('script[src="https://widgets.leadconnectorhq.com/loader.js"]');
+      scripts.forEach(s => s.remove());
     };
   }, []);
 
@@ -43,6 +41,14 @@ export default function Home() {
       <GallerySection />
       <ReviewsSection />
       <Footer />
+      
+      <div dangerouslySetInnerHTML={{
+        __html: `<script 
+          src="https://widgets.leadconnectorhq.com/loader.js"  
+          data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" 
+          data-widget-id="6998c13f2473549c509c8631">
+        </script>`
+      }} />
     </div>
   );
 }
