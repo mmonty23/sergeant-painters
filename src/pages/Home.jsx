@@ -18,17 +18,25 @@ import Navigation from '@/components/home/Navigation';
 
 export default function Home() {
   useEffect(() => {
+    // Remove any existing scripts first
+    const existingScripts = document.querySelectorAll('script[src*="leadconnectorhq.com"]');
+    existingScripts.forEach(s => s.remove());
+
+    // Add the script
     const script = document.createElement('script');
     script.src = 'https://widgets.leadconnectorhq.com/loader.js';
     script.setAttribute('data-resources-url', 'https://widgets.leadconnectorhq.com/chat-widget/loader.js');
     script.setAttribute('data-widget-id', '6998c13f2473549c509c8631');
-    script.async = true;
+    
+    // Log when script loads
+    script.onload = () => console.log('GHL widget script loaded');
+    script.onerror = () => console.error('GHL widget script failed to load');
+    
     document.body.appendChild(script);
 
     return () => {
-      if (script.parentNode) {
-        script.parentNode.removeChild(script);
-      }
+      const scripts = document.querySelectorAll('script[src*="leadconnectorhq.com"]');
+      scripts.forEach(s => s.remove());
     };
   }, []);
 
